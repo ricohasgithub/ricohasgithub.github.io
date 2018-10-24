@@ -22,9 +22,13 @@ function getWeather () {
 
       var data = JSON.parse(this.response);
 
-      console.log('Succ');
+      var weatherData = data.weather[0];
+      console.log(weatherData);
+      // weatherJSON = JSON.stringify(weatherData);
 
-      console.log(data.weather);
+      // console.log(weatherData);
+
+      document.getElementById('root').innerHTML = weatherData.main;
 
     } else {
       console.log();
