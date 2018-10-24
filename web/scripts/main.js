@@ -1,15 +1,9 @@
 
 function getWeather () {
 
- var city = document.getElementById('Main').city.value;
+ var city = document.getElementById('mainForm').city.value;
 
  var request = new XMLHttpRequest();
-
- // request.open('GET', 'http://api.openweathermap.org/data/2.5/weather?q=London&APPID=54ebc70b9591b40a9a998bd35e35e37', true);
- // request.open('GET', 'http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=854ebc70b9591b40a9a998bd35e35e37', true);
-
- // request.open('GET', 'http://api.openweathermap.org/data/2.5/weather?id=2172797&APPID=854ebc70b9591b40a9a998bd35e35e37', true);
-
  var path = buildPathCity(city);
 
  request.open('GET', path, true);
@@ -23,12 +17,18 @@ function getWeather () {
       var data = JSON.parse(this.response);
 
       var weatherData = data.weather[0];
+      var mainData = data.main;
+
+      console.log(mainData);
       console.log(weatherData);
       // weatherJSON = JSON.stringify(weatherData);
 
       // console.log(weatherData);
 
-      document.getElementById('root').innerHTML = weatherData.main;
+      document.getElementById('weather').innerHTML = weatherData.main;
+      
+      document.getElementById('cel').innerHTML = tempConvK(0, mainData.temp);
+      document.getElementById('far').innerHTML = tempConvK(1, mainData.temp);
 
     } else {
       console.log();
@@ -40,6 +40,16 @@ function getWeather () {
  request.send();
 }
 
+function tempConvK (caseN, temp) {
+  // Converts from kelvin to celsius and farenheit depending on the case number value
+  if (caseN === 0) {
+      // Kelvin to Celsius
+      return temp - 273.15;
+  } else {
+      // Otherwise, convert to farehnheit
+      return (temp - 273.15) * (9/5) + 32;
+  }
+}
 
 function buildPathCity (city) {
     return 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&APPID=854ebc70b9591b40a9a998bd35e35e37'
