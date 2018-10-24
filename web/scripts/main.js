@@ -1,13 +1,7 @@
 
-var config = {
-    city : 'Fairplay',
-    units : 'metric',
-    lan : 'en',
-    format : 'json',
-    APPID : '854ebc70b9591b40a9a998bd35e35e37'
-};
+function getWeather () {
 
-function getWeather (city) {
+ var city = document.getElementById('Main').city.value;
 
  var request = new XMLHttpRequest();
 
@@ -17,6 +11,8 @@ function getWeather (city) {
  // request.open('GET', 'http://api.openweathermap.org/data/2.5/weather?id=2172797&APPID=854ebc70b9591b40a9a998bd35e35e37', true);
 
  var path = buildPathCity(city);
+
+ request.open('GET', path, true);
 
  request.onload = function () {
 
@@ -31,6 +27,7 @@ function getWeather (city) {
       console.log(data.weather);
 
     } else {
+      console.log();
       console.log('error');
     }
 
@@ -41,9 +38,9 @@ function getWeather (city) {
 
 
 function buildPathCity (city) {
-    return 'http://api.openweathermap.org/data/2.5/weather?' + city + '=2172797&APPID=854ebc70b9591b40a9a998bd35e35e37'
+    return 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&APPID=854ebc70b9591b40a9a998bd35e35e37'
 }
 
 function buildPathId (id) {
-    return 'http://api.openweathermap.org/data/2.5/weather?' + id + '=2172797&APPID=854ebc70b9591b40a9a998bd35e35e37'
+    return 'http://api.openweathermap.org/data/2.5/weather?id=' + id + '&APPID=854ebc70b9591b40a9a998bd35e35e37'
 }
