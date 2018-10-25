@@ -38,8 +38,11 @@ function getWeather () {
       const icon = document.createElement('img');
       icon.src =  buildIconPath(weatherData.icon);
 
-      const weatherMain = document.createElement('h1');
-      weatherMain.textContent = weatherData.main;
+      const cityInfo = document.createElement('h1');
+      cityInfo.textContent = data.name;
+
+      const weatherMain = document.createElement('p');
+      weatherMain.textContent = 'Weather: ' + weatherData.main;
 
       const tempC = document.createElement('p');
       const tempF = document.createElement('p');
@@ -52,8 +55,10 @@ function getWeather () {
 
       container.appendChild(card);
 
+      card.appendChild(cityInfo);
+      cityInfo.appendChild(icon);
+
       card.appendChild(weatherMain);
-      card.appendChild(icon);
       card.appendChild(tempC);
       card.appendChild(tempF);
       card.appendChild(windInfo);
