@@ -1,4 +1,6 @@
 
+var cLoc = "";
+
 function getWeather () {
 
  var city = document.getElementById('mainForm').city.value;
@@ -25,6 +27,7 @@ function getWeather () {
 
       var weatherData = data.weather[0];
       var mainData = data.main;
+      var windData = data.wind;
 
       console.log(mainData);
       console.log(weatherData);
@@ -44,12 +47,16 @@ function getWeather () {
       tempC.textContent = 'Temperature (Celsius): ' + tempConvK(0, mainData.temp);
       tempF.textContent = 'Temperature (Farenheit): ' + tempConvK(1, mainData.temp);
 
+      const windInfo = document.createElement('p');
+      windInfo.textContent = 'Wind Speed: ' + windData.speed;
+
       container.appendChild(card);
 
       card.appendChild(weatherMain);
       card.appendChild(icon);
       card.appendChild(tempC);
       card.appendChild(tempF);
+      card.appendChild(windInfo);
       // document.getElementById('weather').innerHTML = weatherData.main;
       //
       // document.getElementById('cel').innerHTML = 'Temperature (Celsius): ' + tempConvK(0, mainData.temp);
@@ -63,6 +70,25 @@ function getWeather () {
  }
 
  request.send();
+}
+
+function getWeatherGeoLoc () {
+  var locWDisplay = document.getElementById('currWeather');
+  if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(getLoc);
+      getLoc(navigator.geolocation);
+      console.log(cLoc);
+    //  var lat = cLoc.substring(2, loc.indexOf('a'));
+    //  console.log(lat);
+  } else {
+      locWDisplay.innerHTML = 'N';
+  }
+  console.log(cLoc);
+}
+
+function getLoc (position) {
+    document.getElementById('currWeather').innerHTML =  "Latitude: " + position.coords.latitude +
+    "<br>Longitude: " + position.coords.longitude;
 }
 
 function getRanCaliCity () {
@@ -100,14 +126,18 @@ function tempConvK (caseN, temp) {
   }
 }
 
+function buidlLatLonPath (lat, lon) {
+  return 'http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon;
+}
+
 function buildIconPath (icon) {
   return 'http://openweathermap.org/img/w/' + icon + '.png';
 }
 
 function buildPathCity (city) {
-    return 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&APPID=854ebc70b9591b40a9a998bd35e35e37'
+    return 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&APPID=854ebc70b9591b40a9a998bd35e35e37';
 }
 
 function buildPathId (id) {
-    return 'http://api.openweathermap.org/data/2.5/weather?id=' + id + '&APPID=854ebc70b9591b40a9a998bd35e35e37'
+    return 'http://api.openweathermap.org/data/2.5/weather?id=' + id + '&APPID=854ebc70b9591b40a9a998bd35e35e37';
 }
