@@ -3,28 +3,22 @@
 	<Head>
 					<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 					<script src = "scripts/main.js"> </script>
+					<link href = "styles/Style.css" rel = "stylesheet">
 					<Title> Weatherman </Title>
 		<BR> <BR> <BR>
 	</Head>
 	<Header>
 					<Center> <P> <Font Size = "20" Color = "black"> <B> Weatherman </B> </Font> </P> </Center>
+						<form id = "mainForm">
+							City name:<br>
+							<input type = "text" name = "city"> <br>
+							<input type = "button" value = "Submit" onclick = "getWeather();">
+						</form>
 	</Header>
-	<Body>
-			<div id = "weather">
-				<form id = "mainForm">
-					First name:<br>
-					<input type = "text" name = "city" value = "San Francisco"> <br>
-					<input type = "button" value = "Submit" onclick = "getWeather();">
-				</form>
-			</div>
+	<Body onload = "getRanCaliCity();">
 
-			<div id = 'temp'>
-				<div id = 'cel'>
-				</div>
-
-				<div id = 'far'>
-				</div>
-			</div>
+		<div id="root"></div>
+		
 
 	</Body>
 	<Footer>
