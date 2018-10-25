@@ -24,6 +24,7 @@ p {
 }
 
 h1 {
+  font-family: "Arial";
   text-align: center;
   padding: 1.5rem 2.5rem;
   background-color: #4286f4;
