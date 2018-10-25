@@ -20,6 +20,7 @@
 p {
   padding: 0 2.5rem 2.5rem;
   margin: 0;
+  font-family: "Arial";
 }
 
 h1 {
@@ -31,19 +32,8 @@ h1 {
   color: white;
 }
 
-/* img {
-  padding: 0 2.5rem 2.5rem;
-  margin: 0;
-} */
-
-/* @media screen and (min-width: 300px) {
-  .card {
-    flex: 1 1 calc(25% - 2rem);
-  }
-} */
-
 input[type=text], select {
-    width: 100%;
+    width: 50%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -53,7 +43,7 @@ input[type=text], select {
 }
 
 input[type=Button] {
-    width: 50%;
+    width: 25%;
     background-color: #4286f4;
     color: white;
     padding: 14px 20px;
