@@ -1,3 +1,4 @@
 theme: jekyll-theme-minimal
 title: Welcome to Weatherman!
 description: This is a web app that takes in te name of a city and prints the weather!
+baseurl: web
