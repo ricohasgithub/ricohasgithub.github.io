@@ -1,0 +1,22 @@
+p {
+  margin: 0;
+  padding: 1.5rem 2.5rem;
+  background-color: #ffffff;
+  color: black;
+  font-family: "Arial";
+}
+
+#Title {
+  margin: 0;
+  background-color: #4286f4;
+  color: white;
+  font-family: "Arial";
+}
+
+h1 {
+  font-family: "Arial";
+  text-align: center;
+  padding: 1.5rem 2.5rem;
+  font-size: 1.5rem;
+  color: black;
+}
