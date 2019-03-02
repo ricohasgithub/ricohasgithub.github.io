@@ -6,10 +6,18 @@ p {
   font-family: "Arial";
 }
 
+Header {
+  -webkit-animation: fadein 9s;
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 #Title {
   margin: 0;
-  background-color: #4286f4;
-  color: white;
+  color: black;
   font-family: "Arial";
 }
 
@@ -17,6 +25,18 @@ h1 {
   font-family: "Arial";
   text-align: center;
   padding: 1.5rem 2.5rem;
+  font-size: 2rem;
+  color: black;
+}
+
+h2 {
+  font-family: "Arial";
+  padding: 0rem 1.5rem;
   font-size: 1.5rem;
   color: black;
+}
+
+li {
+  font-family: "Arial";
+  padding: 0.5rem 0.5rem;
 }
