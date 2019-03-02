@@ -1,3 +1,3 @@
-## Weatherman
+# Hello World!
 
-Weatherman is a web app that gives weather prediction based on the location of a user
+My name is Rico Zhu and this is my personal webpage hosted on Github pages (thanks Github!)
