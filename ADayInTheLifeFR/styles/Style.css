@@ -3,11 +3,12 @@ p {
   padding: 1.5rem 2.5rem;
   background-color: #ffffff;
   color: black;
+  font-size: 1.25rem;
   font-family: "Arial";
 }
 
 Header {
-  -webkit-animation: fadein 9s;
+  -webkit-animation: fadein 5s;
 }
 
 @-webkit-keyframes fadein {
@@ -29,14 +30,27 @@ h1 {
   color: black;
 }
 
+img {
+  padding: 0.5rem 1.5rem;
+}
+
 h2 {
   font-family: "Arial";
-  padding: 0rem 1.5rem;
+  padding: 0rem 2rem;
   font-size: 1.5rem;
   color: black;
 }
 
+ul {
+  padding: 2rem 5rem;
+}
+
 li {
   font-family: "Arial";
-  padding: 0.5rem 0.5rem;
+  padding: 0.75rem 1rem;
+  font-size: 1.25rem;
+}
+
+footer {
+  opacity: 0.5;
 }
