@@ -1,0 +1,89 @@
+
+function displayScreen0 () {
+
+  let displayNode = document.getElementById("displayArea");
+
+  while (displayNode.firstChild) {
+    displayNode.removeChild(displayNode.firstChild);
+  }
+
+  let para = document.createElement("P");
+  let pTxt = document.createTextNode("Je me réveille à cinq heures et je fais mon lit. Je ramasse un livre, Est d'Eden de John Steinbeck, et je lis pour une demi-heure. Après j’ai fini de lire, je me brosse les dents et je me lave. Je m’habille pour le jour.");
+  para.appendChild(pTxt);
+
+  let pChoice = document.createElement("P");
+  let pCTxt = document.createTextNode("Quelle dois-je porter?");
+  pChoice.appendChild(pCTxt);
+
+  let btn = document.createElement("BUTTON");
+  let bTxt = document.createTextNode("CHOICE 1");
+  btn.appendChild(bTxt);
+  btn.onclick = displayScreen1;
+  btn.style.align = "center";
+
+  displayNode.appendChild(para);
+  displayNode.appendChild(pChoice);
+  displayNode.appendChild(btn);
+
+}
+
+function displayScreen1 () {
+
+  let displayNode = document.getElementById("displayArea");
+
+  while (displayNode.firstChild) {
+    displayNode.removeChild(displayNode.firstChild);
+  }
+
+  let para = document.createElement("P");
+  let pTxt = document.createTextNode("J’entre dans la cuisine et je cuisine le petit-déjeuner. Un petit-déjeuner typique composé des pain grillé et une tasse du lait. Après j’ai fini manger mon petit-déjeuner, je me déplace à l’école. Je me dépêche parce que c’est l’hiver et je vais devoir marcher. Je fais de vélo dans l’été.");
+  para.appendChild(pTxt);
+
+  let para2 = document.createElement("P");
+  let p2Txt = document.createTextNode("À l’école, je vais mon cours. J’ai d’anglais en première période, puis, j’ai des mathématiques en seconde période, un pause, d’histoire Canadien et le Français. J’ai des beaucoup des activités extrascolaire, aussi.");
+  para2.appendChild(p2Txt);
+
+  let pChoice = document.createElement("P");
+  let pCTxt = document.createTextNode("Quelle jour est aujourd hui?");
+  pChoice.appendChild(pCTxt);
+
+  let btn = document.createElement("BUTTON");
+  let bTxt = document.createTextNode("CHOICE 1");
+  btn.appendChild(bTxt);
+  btn.onclick = displayScreen2;
+  btn.style.align = "center";
+
+  displayNode.appendChild(para);
+  displayNode.appendChild(para2);
+  displayNode.appendChild(pChoice);
+  displayNode.appendChild(btn);
+
+}
+
+function displayScreen2 () {
+
+  let displayNode = document.getElementById("displayArea");
+
+  while (displayNode.firstChild) {
+    displayNode.removeChild(displayNode.firstChild);
+  }
+
+  let para = document.createElement("P");
+  let pTxt = document.createTextNode("Je me retourne à ma maison après un jour exténuant. Je fais des devoirs pour quelques temps puis je joue des joue de vidéos. Je fais la lessive et je repasse mon pantalons.");
+  para.appendChild(pTxt);
+
+  let para2 = document.createElement("P");
+  let p2Txt = document.createTextNode("À six heures, je mange mon souper et je fais la vaisselle. La lave-vaisselle est cassé. À neuf heures, je me couche.");
+  para2.appendChild(p2Txt);
+
+  let para3 = document.createElement("H2");
+  let p3Txt = document.createTextNode("La Fin!");
+  para3.appendChild(p3Txt);
+
+  para3.style.textAlign = "center";
+
+  displayNode.appendChild(para);
+  displayNode.appendChild(para2);
+  displayNode.appendChild(para3);
+
+}
