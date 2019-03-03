@@ -15,12 +15,18 @@ function displayScreen0 () {
   let pCTxt = document.createTextNode("Quelle dois-je porter?");
   pChoice.appendChild(pCTxt);
 
+  let dImg = document.createElement("img");
+  dImg.src = "wakeup.jpg";
+  dImg.style.width = 200;
+  dImg.style.height = 100;
+
   let btn = document.createElement("BUTTON");
   let bTxt = document.createTextNode("CHOICE 1");
   btn.appendChild(bTxt);
   btn.onclick = displayScreen1;
   btn.style.align = "center";
 
+  displayNode.appendChild(dImg);
   displayNode.appendChild(para);
   displayNode.appendChild(pChoice);
   displayNode.appendChild(btn);
@@ -43,6 +49,11 @@ function displayScreen1 () {
   let p2Txt = document.createTextNode("À l’école, je vais mon cours. J’ai d’anglais en première période, puis, j’ai des mathématiques en seconde période, un pause, d’histoire Canadien et le Français. J’ai des beaucoup des activités extrascolaire, aussi.");
   para2.appendChild(p2Txt);
 
+  let dImg = document.createElement("img");
+  dImg.src = "breakfast.jpg";
+  dImg.style.width = 200;
+  dImg.style.height = 100;
+
   let pChoice = document.createElement("P");
   let pCTxt = document.createTextNode("Quelle jour est aujourd hui?");
   pChoice.appendChild(pCTxt);
@@ -54,6 +65,7 @@ function displayScreen1 () {
   btn.style.align = "center";
 
   displayNode.appendChild(para);
+  displayNode.appendChild(dImg);
   displayNode.appendChild(para2);
   displayNode.appendChild(pChoice);
   displayNode.appendChild(btn);
@@ -80,9 +92,15 @@ function displayScreen2 () {
   let p3Txt = document.createTextNode("La Fin!");
   para3.appendChild(p3Txt);
 
+  let dImg = document.createElement("img");
+  dImg.src = "iron.jpg";
+  dImg.style.width = 200;
+  dImg.style.height = 100;
+
   para3.style.textAlign = "center";
 
   displayNode.appendChild(para);
+  displayNode.appendChild(dImg);
   displayNode.appendChild(para2);
   displayNode.appendChild(para3);
 

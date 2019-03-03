@@ -22,6 +22,14 @@ Header {
   font-family: "Arial";
 }
 
+#displayArea {
+  border:5px solid black;
+  display: block;
+  margin: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 button {
   background-color: #4CAF50; /* Green */
   border: none;
