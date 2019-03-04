@@ -20,16 +20,23 @@ function displayScreen0 () {
   dImg.style.width = 200;
   dImg.style.height = 100;
 
-  let btn = document.createElement("BUTTON");
-  let bTxt = document.createTextNode("CHOICE 1");
-  btn.appendChild(bTxt);
-  btn.onclick = displayScreen1;
-  btn.style.align = "center";
+  let btn1 = document.createElement("BUTTON");
+  let bTxt = document.createTextNode("Une chemise avec des pantalons");
+  btn1.appendChild(bTxt);
+  btn1.onclick = displayScreen1;
+  btn1.style.align = "center";
+
+  let btn2 = document.createElement("BUTTON");
+  let bTxt2 = document.createTextNode("Un chandail avec des pantalons");
+  btn2.appendChild(bTxt2);
+  btn2.onclick = displayScreen1;
+  btn2.style.align = "center";
 
   displayNode.appendChild(dImg);
   displayNode.appendChild(para);
   displayNode.appendChild(pChoice);
-  displayNode.appendChild(btn);
+  displayNode.appendChild(btn1);
+  displayNode.appendChild(btn2);
 
 }
 
@@ -58,17 +65,31 @@ function displayScreen1 () {
   let pCTxt = document.createTextNode("Quelle jour est aujourd hui?");
   pChoice.appendChild(pCTxt);
 
-  let btn = document.createElement("BUTTON");
-  let bTxt = document.createTextNode("CHOICE 1");
-  btn.appendChild(bTxt);
-  btn.onclick = displayScreen2;
-  btn.style.align = "center";
+  let btn1 = document.createElement("BUTTON");
+  let bTxt = document.createTextNode("Lundi - Robotiques");
+  btn1.appendChild(bTxt);
+  btn1.onclick = displayScreen2;
+  btn1.style.align = "center";
+
+  let btn2 = document.createElement("BUTTON");
+  let bTxt2 = document.createTextNode("Mardi - Orchestre");
+  btn2.appendChild(bTxt2);
+  btn2.onclick = displayScreen2;
+  btn2.style.align = "center";
+
+  let btn3 = document.createElement("BUTTON");
+  let bTxt3 = document.createTextNode("Vendredi - Reach");
+  btn3.appendChild(bTxt3);
+  btn3.onclick = displayScreen2;
+  btn3.style.align = "center";
 
   displayNode.appendChild(para);
   displayNode.appendChild(dImg);
   displayNode.appendChild(para2);
   displayNode.appendChild(pChoice);
-  displayNode.appendChild(btn);
+  displayNode.appendChild(btn1);
+  displayNode.appendChild(btn2);
+  displayNode.appendChild(btn3);
 
 }
 
