@@ -53,7 +53,7 @@ function displayScreen1 () {
   para.appendChild(pTxt);
 
   let para2 = document.createElement("P");
-  let p2Txt = document.createTextNode("À l’école, je vais mon cours. J’ai d’anglais en première période, puis, j’ai des mathématiques en seconde période, un pause, d’histoire Canadien et le Français. J’ai des beaucoup des activités extrascolaire, aussi.");
+  let p2Txt = document.createTextNode("À l’école, je vais mon cours. J’ai d’anglais en première période, puis, j’ai des mathématiques en deuxième période, un pause, d’histoire Canadien et le Français. J’ai des beaucoup des activités extrascolaire, aussi.");
   para2.appendChild(p2Txt);
 
   let dImg = document.createElement("img");
