@@ -109,20 +109,24 @@ function displayScreen2 () {
   let p2Txt = document.createTextNode("À six heures, je mange mon souper et je fais la vaisselle. La lave-vaisselle est cassé. À neuf heures, je me couche.");
   para2.appendChild(p2Txt);
 
-  let para3 = document.createElement("H2");
-  let p3Txt = document.createTextNode("La Fin!");
+  let para3 = document.createElement("P");
+  let p3Txt = document.createTextNode("Les tâches ménagères que l’autre élève doit fait quand il/elle vient à Oakville et ma maison sont faire les vaisselles, faire la lessive, repasser le linge et cuisiner le petit-déjeuner.");
   para3.appendChild(p3Txt);
+
+  let para4 = document.createElement("H2");
+  let p4Txt = document.createTextNode("La Fin!");
+  para4.appendChild(p4Txt);
+  para4.style.textAlign = "center";
 
   let dImg = document.createElement("img");
   dImg.src = "iron.jpg";
   dImg.style.width = 200;
   dImg.style.height = 100;
 
-  para3.style.textAlign = "center";
-
   displayNode.appendChild(para);
   displayNode.appendChild(dImg);
   displayNode.appendChild(para2);
   displayNode.appendChild(para3);
+  displayNode.appendChild(para4);
 
 }
