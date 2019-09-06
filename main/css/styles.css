@@ -1,0 +1,52 @@
+.container {}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:1;
+}
+
+#mainNav {
+  padding-top: 5%;
+  padding-bottom: 20px;
+  -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+  transition: padding-top 0.3s, padding-bottom 0.3s;
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+
+#mainNav.navbar {
+  padding: 10px 16px;
+  font-size: 22px;
+}
+
+#mainNav.navbar-scroll {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #212529;
+}
+
+#mainNav.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#mainNav.nav-list .nav-item {
+  float: right;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#mainNav.nav-list .nav-item a {
+  color: white;
+}
+
+#mainNav.nav-list .nav-item a:hover {
+  background-color: #268237;
+}
