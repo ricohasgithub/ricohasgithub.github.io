@@ -44,17 +44,17 @@
 }
 
 #mainNav.nav-list .nav-item a {
-  color: white;
+  color: #494d52;
 }
 
 #mainNav.nav-list .nav-item a:hover {
-  background-color: #268237;
+  background-color: #f2f2f2;
 }
 
 header.master-head {
   text-align: center;
-  color: #494d52;
-  background-image: url("../../assets/master-head-background.jpg");
+  color: #3b3b3b;
+  /* background-image: url("../../assets/master-head-background.jpg"); */
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: bottom -20px center;
