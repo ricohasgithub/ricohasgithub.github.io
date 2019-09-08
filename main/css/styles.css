@@ -7,6 +7,41 @@
   z-index:1;
 }
 
+.typewriter {
+  font-family: Courier, monospace;
+	display: inline-block;
+}
+
+.typewriter-text {
+    display: inline-block;
+  	overflow: hidden;
+  	letter-spacing: 2px;
+ 	  animation: typing 2s steps(13, end), blink .6s step-end infinite;
+    white-space: nowrap;
+    font-size: 100px;
+    font-weight: 700;
+    border-right: 4px solid orange;
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    from {
+        width: 0%
+    }
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: orange;
+    }
+}
+
 #mainNav {
   padding-top: 5%;
   padding-bottom: 5%;
@@ -41,6 +76,7 @@
   text-align: center;
   padding: 0%;
   text-decoration: none;
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 }
 
 #mainNav.nav-list .nav-item a {
@@ -65,13 +101,15 @@ header.master-head {
 header.master-head #intro-text {
   padding-top: 23%;
   padding-bottom: 10%;
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 }
 
 header.master-head #intro-text #intro-header {
   font-size: 100px;
   font-weight: 700;
-  line-height: 30%;
-  margin-bottom: 5%;
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  /* line-height: 30%; */
+  margin-top: -9%;
 }
 
 header.master-head #intro-text #intro-name {
