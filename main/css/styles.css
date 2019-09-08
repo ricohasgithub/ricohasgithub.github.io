@@ -117,3 +117,27 @@ header.master-head #intro-text #intro-name {
   font-weight: 500;
   line-height: 250%;
 }
+
+section.bg-light-section {
+  text-align: center;
+  color: black;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: bottom -20px center;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 80px;
+}
+
+section.bg-dark-section {
+  text-align: center;
+  color: #00ff41;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: bottom -20px center;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 80px;
+}
