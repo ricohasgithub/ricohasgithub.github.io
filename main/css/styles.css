@@ -8,7 +8,7 @@
 }
 
 .typewriter {
-  font-family: Courier, monospace;
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 	display: inline-block;
 }
 
@@ -20,7 +20,7 @@
     white-space: nowrap;
     font-size: 100px;
     font-weight: 700;
-    border-right: 4px solid orange;
+    border-right: 7px solid orange;
     box-sizing: border-box;
 }
 
@@ -49,7 +49,8 @@
   transition: padding-top 0.3s, padding-bottom 0.3s;
   border: none;
   background-color: transparent;
-  color: white;
+  color: black;
+  margin-left: 1%;
 }
 
 #mainNav.navbar {
