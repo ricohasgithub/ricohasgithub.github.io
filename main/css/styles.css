@@ -43,7 +43,7 @@
 }
 
 #mainNav {
-  padding-top: 5%;
+  padding-top: 8%;
   padding-bottom: 5%;
   -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
   transition: padding-top 0.3s, padding-bottom 0.3s;
@@ -60,7 +60,7 @@
 }
 
 #mainNav.navbar-scroll {
-  padding-top: 0;
+  padding-top: 1%;
   padding-bottom: 0;
   background-color: white;
 }
@@ -111,7 +111,7 @@ header.master-head #intro-text #intro-header {
   font-weight: 700;
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   /* line-height: 30%; */
-  margin-top: -9%;
+  margin-top: -5%;
 }
 
 header.master-head #intro-text #intro-name {
