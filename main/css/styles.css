@@ -194,3 +194,7 @@ section.bg-dark-section {
   height: 100vh;
   padding-top: 80px;
 }
+
+html {
+  scroll-behavior: smooth;
+}
