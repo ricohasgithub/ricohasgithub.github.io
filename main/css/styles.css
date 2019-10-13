@@ -4,7 +4,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index:1;
+  z-index: 2;
 }
 
 .dark {
@@ -29,44 +29,98 @@
     box-sizing: border-box;
 }
 
-.typewriter-text-dark {
+.typewriter-text-dark1 {
     display: inline-block;
   	overflow: hidden;
   	letter-spacing: 2px;
- 	  animation: typing 2s steps(13, end), blink-dark .6s step-end infinite;
+ 	  animation: typing 2s steps(13, end), blink-dark .6s step-end 4;
     white-space: nowrap;
     font-size: 30px;
     font-weight: 700;
     color: #00ff41;
-    border-right: 3px solid #00ff41;
+    border-right: 3px solid transparent;
+    box-sizing: border-box;
+    animation-delay: 0s;
+}
+
+.typewriter-text-dark2 {
+    display: inline-block;
+  	overflow: hidden;
+  	letter-spacing: 2px;
+    animation: show, typing 2s steps(15, end), blink-dark .6s step-end 4;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: 700;
+    color: transparent;
+    border-right: 3px solid transparent;
     box-sizing: border-box;
 }
 
+.typewriter-text-dark3 {
+    display: inline-block;
+    overflow: hidden;
+    letter-spacing: 2px;
+    animation: show, typing 2s steps(15, end), blink-dark .6s step-end 4;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: 700;
+    color: transparent;
+    border-right: 3px solid transparent;
+    box-sizing: border-box;
+}
+
+.typewriter-text-dark4 {
+    display: inline-block;
+    overflow: hidden;
+    letter-spacing: 2px;
+    animation: show, typing 2s steps(15, end), blink-dark .6s step-end 4;
+    animation-fill-mode: forwards;
+    animation-delay: 6s;
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: 700;
+    color: transparent;
+    border-right: 3px solid transparent;
+    box-sizing: border-box;
+}
+
+.typewriter-text-darkfinal {
+    display: inline-block;
+  	overflow: hidden;
+  	letter-spacing: 2px;
+    animation: show, typing 2s steps(15, end), blink-dark .6s step-end infinite;
+    animation-fill-mode: forwards;
+    animation-delay: 8s;
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: 700;
+    color: transparent;
+    border-right: 3px solid transparent;
+    box-sizing: border-box;
+}
+
+@keyframes show {
+  from { color: transparent; }
+  to { color: #00ff41; }
+}
+
 @keyframes typing {
-    from {
-        width: 0%
-    }
-    to {
-        width: 100%
-    }
+    from { width: 0% }
+    to { width: 100% }
 }
 
 @keyframes blink {
-    from, to {
-        border-color: transparent
-    }
-    50% {
-        border-color: orange;
-    }
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
 }
 
 @keyframes blink-dark {
-    from, to {
-        border-color: transparent
-    }
-    50% {
-        border-color: #00ff41;
-    }
+    from, to { border-color: transparent }
+    50% { border-color: #00ff41; }
 }
 
 #mainNav {
@@ -116,6 +170,13 @@
   background-color: #f2f2f2;
 }
 
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 #about-slide.plane-list {
   align-items: center;
   width: 100%;
@@ -128,9 +189,10 @@
 #about-slide.plane {
   background-color: black;
   display: table-cell;
-  width: 50%;
-  height: 89vh;
-  margin-left: 4%;
+  width: 48%;
+  margin-top: 2%;
+  height: 80vh;
+  margin-left: 2%;
   float: left;
   display: block;
   text-align: center;
@@ -138,6 +200,32 @@
   border: 12px solid;
   border-color: #d1d1d1 #ebebeb;
   border-radius: 2%;
+}
+
+#about-slide.plane-right {
+  background-color: #f2f2f2;
+  display: table-cell;
+  width: 45%;
+  height: 80vh;
+  margin-top: 2%;
+  margin-right: 3%;
+  float: right;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  border: 12px solid;
+  border-color: #d1d1d1 #ebebeb;
+  border-radius: 2%;
+}
+
+#portfolio.portfolio-carosel-banner {
+  width: 100%;
+}
+
+.portfolio-item {
+  display: table-cell;
+  width: 20%;
+  height: 50%;
 }
 
 header.master-head {
@@ -149,12 +237,14 @@ header.master-head {
   background-position: bottom -20px center;
   background-size: cover;
   height: 100vh;
+  z-index: 1;
 }
 
 header.master-head #intro-text {
   padding-top: 23%;
   padding-bottom: 10%;
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  z-index: 1;
 }
 
 header.master-head #intro-text #intro-header {
@@ -163,12 +253,14 @@ header.master-head #intro-text #intro-header {
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   /* line-height: 30%; */
   margin-top: -5%;
+  z-index: 1;
 }
 
 header.master-head #intro-text #intro-name {
   font-size: 35px;
   font-weight: 500;
   line-height: 250%;
+  z-index: 1;
 }
 
 section.bg-light-section {
@@ -183,6 +275,18 @@ section.bg-light-section {
   padding-top: 80px;
 }
 
+section.bg-light-section-min {
+  text-align: center;
+  color: black;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: bottom -20px center;
+  background-size: cover;
+  height: 35vh;
+  padding-top: 80px;
+}
+
 section.bg-dark-section {
   text-align: center;
   color: #00ff41;
@@ -193,6 +297,14 @@ section.bg-dark-section {
   background-size: cover;
   height: 100vh;
   padding-top: 80px;
+}
+
+img.portfolio-slide-image {
+  width: 100%;
+}
+
+img.portfolio-slide-image-border {
+  width: 70%;
 }
 
 html {
