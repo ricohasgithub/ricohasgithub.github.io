@@ -218,6 +218,10 @@
   border-radius: 2%;
 }
 
+.about-plane-image {
+  height: 100%;
+}
+
 #portfolio.portfolio-carosel-banner {
   width: 100%;
 }
