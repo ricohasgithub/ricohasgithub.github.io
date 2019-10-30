@@ -239,6 +239,12 @@
   height: 50vh;
   border: 1px solid #ebebeb;
   border-radius: 1%;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.portfolio-item:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 header.master-head {
