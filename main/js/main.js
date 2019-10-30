@@ -3,7 +3,7 @@ particlesJS.load("particles-js", "/main/assets/particles.json", function() {
   console.log("particles.js loaded - callback");
 });
 
-window.onscroll = function() {scrollNavbar()};
+window.onscroll = function() { scrollNavbar() };
 
 function scrollNavbar () {
   if (window.scrollY > 10) {
