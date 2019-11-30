@@ -9,6 +9,7 @@
 
 .card {
   display: table-cell;
+  text-decoration: none;
 }
 
 .card-title {
@@ -27,10 +28,6 @@
   margin-left: 11%;
   text-align: left;
   max-width: 80%;
-}
-
-.card-link {
-  background-color: orange;
 }
 
 .dark {
@@ -259,6 +256,8 @@
 .portfolio-item {
   width: 55vh;
   height: 50vh;
+  text-decoration: none;
+  color: #2e2e2e;
   border: 1px solid #ebebeb;
   border-radius: 1%;
   transition: 0.3s;
@@ -266,6 +265,8 @@
 }
 
 .portfolio-item:hover {
+  text-decoration: none;
+  color: black;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
@@ -358,6 +359,10 @@ img.portfolio-slide-image-border {
 
 ::-webkit-scrollbar-thumb {
   background: #e3e3e3;
+}
+
+a {
+  text-decoration: none;
 }
 
 html {
