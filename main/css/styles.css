@@ -11,6 +11,28 @@
   display: table-cell;
 }
 
+.card-title {
+  float: left;
+  margin-top: 20%;
+  margin-left: 11%;
+  margin-right: 2%;
+  font-size: 175%;
+  color: #383838;
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+}
+
+.card-text {
+  float: left;
+  margin-top: 5%;
+  margin-left: 11%;
+  text-align: left;
+  max-width: 80%;
+}
+
+.card-link {
+  background-color: orange;
+}
+
 .dark {
   background-color: black;
   color: #00ff41;
@@ -324,6 +346,18 @@ img.portfolio-slide-image {
 
 img.portfolio-slide-image-border {
   width: 70%;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e3e3e3;
 }
 
 html {
