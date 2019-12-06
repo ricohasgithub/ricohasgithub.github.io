@@ -368,3 +368,14 @@ a {
 html {
   scroll-behavior: smooth;
 }
+
+/* CSS Support for Mobile Viewing */
+@media (max-width: 410px) {
+
+  .card {
+    display: block;
+    margin-left: 7.5vh;
+    margin-bottom: 10vh;
+  }
+
+}
