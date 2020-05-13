@@ -35,8 +35,33 @@
   height: 70vh;
 }
 
+.tab-dots {}
+
+.red-tab-dot {
+  margin-left: 2vh;
+  background-color: #FF6347;
+  height: 2vh;
+  width: 2vh;
+  border-radius: 50%;
+}
+
+.yellow-tab-dot {
+  margin-left: 2vh;
+  background-color: #FFFF00;
+  height: 2vh;
+  width: 2vh;
+  border-radius: 50%;
+}
+
+.green-tab-dot {
+  margin-left: 2vh;
+  background-color: #32CD32;
+  height: 2vh;
+  width: 2vh;
+  border-radius: 50%;
+}
+
 .portfolio-item {
-  padding: 1vw;
   transition: 0.3s;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
