@@ -1,9 +1,18 @@
+
+.navbar {
+  z-index: 5;
+}
+
 .navbar-brand {
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
 }
 
 .nav-item {
   font-size: 1.75vw;
+}
+
+#home {
+  height: 100vh;
 }
 
 #home-title {
@@ -20,6 +29,10 @@
   font-size: 2.5vw;
   font-weight: 400;
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+}
+
+#portfolio {
+  height: 70vh;
 }
 
 h1 {
