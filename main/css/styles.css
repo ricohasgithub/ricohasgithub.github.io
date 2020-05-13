@@ -35,6 +35,19 @@
   height: 80vh;
 }
 
+.about-card {
+  transition: 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.about-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.about-body {
+  color: #00ff00;
+}
+
 #portfolio {
   height: 70vh;
 }
