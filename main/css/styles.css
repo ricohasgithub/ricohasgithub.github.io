@@ -54,6 +54,10 @@
   color: #00ff00;
 }
 
+.about-img {
+  height: 17.5vw;
+}
+
 #portfolio {
   height: 70vh;
 }
