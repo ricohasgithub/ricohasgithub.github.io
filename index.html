@@ -1,131 +1,159 @@
 <!DOCTYPE html>
 
-<html lang = "en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset = "utf-8">
-    <meta name = "viewport" content = "width=device-width, initial-scale=1, shrink-to-fit=no">
+<html lang="en">
 
-    <!-- Bootstrap CSS -->
-    <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity = "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel = "stylesheet" href = "https://unpkg.com/aos@2.3.1/dist/aos.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Rico Zhu</title>
-    <link rel = "shortcut icon" type = "image/png" href = "main/assets/icon.png"/>
+  <title>Rico Zhu</title>
+  <link rel="shortcut icon" type="image/png" href="main/assets/icon.png" />
 
-    <link type = "text/css" rel = "stylesheet" href = "main/css/styles.css"/>
+  <!-- Custom CSS -->
+  <link type="text/css" rel="stylesheet" href="main/css/styles.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- AOS Animation Library CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type = "text/javascript" src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type = "text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.3.1/parallax.min.js"></script>
-    <script src = "https://cdn.jsdelivr.net/npm/particles.js@2/particles.min.js"></script>
-    <script type = "text/javascript" src = "main/js/main.js"></script>
+  <!-- Custom JS -->
+  <script defer type="text/javascript" src="main/js/main.js"></script>
+  <!-- Bootstrap + jQuery JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- AOS Animation Library JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  </head>
+</head>
 
-  <body id = "page-top">
+<body>
 
-     <nav class = "navbar sticky" id = "mainNav">
-       <div class = "typewriter">
-         <a style = "display:block" href = "#top">
-           <div class = "navbar typewriter-text" id = "mainNav" href = "">Rico Zhu</div>
-         </a>
-       </div>
-       <ul class = "nav-list" id = "mainNav">
-         <li class = "nav-list nav-item" id = "mainNav">
-           <a class = "nav-link js-scroll-trigger" href = "#contact">contact me</a>
-         </li>
-         <li class = "nav-list nav-item" id = "mainNav">
-           <a class = "nav-link js-scroll-trigger" href = "#resume">resume</a>
-         </li>
-         <li class = "nav-list nav-item" id = "mainNav">
-           <a class = "nav-link js-scroll-trigger" href = "#portfolio">portfolio</a>
-         </li>
-         <li class = "nav-list nav-item" id = "mainNav">
-           <a class = "nav-link js-scroll-trigger" href = "#about">about me</a>
-         </li>
-       </ul>
-     </nav>
+  <!-- Bootstrap Navbar -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
 
-     <!-- Main/Master Header  -->
-     <header class = "master-head">
-       <section id = "top"/>
-       <div class = "container">
-         <div id = "intro-text">
-           <div class = "typewriter">
-             <div class = "typewriter-text" id = "intro-header">Hello, World!</div>
-           </div>
-           <div data-aos = "fade-up" data-aos-delay="2100" data-aos-duration = "1000">
-             <div id = "intro-name">My name is Rico Zhu, a 16 year old hackathon enthusiast</div>
-           </div>
-         </div>
-       <div>
-     </header>
+    <div class="type-container">
+      <a class="navbar-brand type" href="#home">Rico Zhu</a>
+    </div>
 
-     <section class = "bg-light-section" id = "about">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-       <div class = "plane-list" id = "about-slide">
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <a class="nav-item nav-link mr-4" href="#about">about me</a>
+        <a class="nav-item nav-link mr-4" href="#portfolio">portfolio</a>
+        <a class="nav-item nav-link mr-4" href="#resume">resume</a>
+      </ul>
+    </div>
 
-         <!-- Left side terminal info -->
-         <div data-aos = "zoom-in">
-           <div class = "plane dark" id = "about-slide">
-             <div class = "typewriter">
-               <br>
-               <br>
-               <br>
-               <div class = "typewriter-text-dark1">Hi! My name is Rico Zhu, and</div>
-               <br>
-               <div class = "typewriter-text-dark2">I love everything CS related!</div>
-               <br>
-               <div class = "typewriter-text-dark3">I have worked with lots of   </div>
-               <br>
-               <div class = "typewriter-text-dark4">industry tools, including    </div>
-               <br>
-               <div class = "typewriter-text-darkfinal">ML, Node and Blockchain!</div>
-               <br>
-             </div>
-           </div>
-         </div>
+  </nav>
 
-         <!-- Right side hackathon images -->
-         <div data-aos = "fade-up">
-            <div class = "plane-right" id = "about-slide">
-                <img src = "main/assets/Hackathon1.PNG" class = "about-plane-image"/>
-            </div>
-         </div>
+  <div id="home" class="container">
 
-       </div>
+    <div class="type-container pull-left">
+      <div id="home-title" class="page-title type"> Hello World! </div>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="750">
+      <div id="home-subtitle" class="page-subtitle pull-left"> > My name is Rico Zhu, a 17 year old hackathon enthusiast </div>
+    </div>
 
-    </section>
+  </div>
 
-     <section class = "bg-light-section-min" id = "portfolio">
-        <div class = "portfolio-carosel-banner" id = "portfolio">
-            <a class = "card portfolio-item" href = "https://github.com/ricozhuthegreat/Qber">
-                <h1 class = "card-title"> Qber </h1>
-                <p class = "card-text"> A machine learning library built using Java. Supports basic neural networks. </p>
-            </a>
-            <a class = "card portfolio-item" href = "https://github.com/ricozhuthegreat/Snapool_Web">
-              <h1 class = "card-title"> Snapool </h1>
-              <p class = "card-text"> A carpooling web application. Implemented using Firebase and the SnapKit API. </p>
-            </a>
-            <a class = "card portfolio-item" href = "https://github.com/ricozhuthegreat/Econergize">
-              <h1 class = "card-title"> Econergize </h1>
-              <p class = "card-text"> A mobile app built using React-Native (JavaScript). Uses cloud firestore for login purposes. </p>
-            </a>
+  <div id="about" class="container">
+
+    <div class="card-deck">
+
+      <div class="card about-card">
+        <h5 class="card-header">C:\</h5>
+        <div class="card-body about-body bg-dark">
+          <h5 class="card-title">About Me</h5>
+          <p class="card-text">> Hi! My name is Rico Zhu, and I love everything CS related! I have worked with lots of industry tools, including ML, Node and Blockchain!</p>
+          <p class="card-text">> I'm always looking for new innovative avenues that I can help improve the lives of those in my community. I am also a prolific hacker, having gone to over a dozen hackathons and winning over half of them.</p>
         </div>
-     </section>
+      </div>
 
-     <!-- Optional JavaScript -->
-     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-     <script src = "https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-     <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-     <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <div class="card border-light about-card">
+        <div class="card-header bg-dark">
+          <div class="tab-dots row">
+            <div class="blank-tab-dot"></div>
+            <div class="blank-tab-dot"></div>
+            <div class="blank-tab-dot"></div>
+          </div>
+        </div>
+        <div class="card-body">
 
-     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-     <script>
-       AOS.init();
-     </script>
+        </div>
+      </div>
 
-  </body>
+    </div>
+
+  </div>
+
+  <div id="portfolio" class="container">
+
+    <div class="card-deck">
+
+      <div class="card border-light portfolio-item">
+        <div class="card-header bg-primary">
+          <div class="tab-dots row">
+            <div class="red-tab-dot"></div>
+            <div class="yellow-tab-dot"></div>
+            <div class="green-tab-dot"></div>
+          </div>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Roots</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Decentralized crowd-funding for resilient communities</h6>
+            <p class="card-text">Best Hack using Puma Browser and Blockstack at Hack:Now 2020. Built using Firebase, Blockstack and React-Native.</p>
+            <a href="https://devpost.com/software/roots-zovgf2" class="card-link">Devpost</a>
+            <a href="https://github.com/ricozhuthegreat/Roots-web" class="card-link">Github</a>
+        </div>
+      </div>
+
+      <div class="card border-light portfolio-item">
+        <div class="card-header bg-dark">
+          <div class="tab-dots row">
+            <div class="red-tab-dot"></div>
+            <div class="yellow-tab-dot"></div>
+            <div class="green-tab-dot"></div>
+          </div>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Integra</h5>
+            <h6 class="card-subtitle mb-2 text-muted">ML-based Writing Assistant</h6>
+            <p class="card-text">2nd place at MIT Blueprint 2020. Built using a custom NLP model, Firebase and Google Cloud Platform APIs. Web app with a python backend.</p>
+            <a href="https://devpost.com/software/integra-ehlawf" class="card-link">Devpost</a>
+            <a href="https://github.com/ricozhuthegreat/IntegraBackend" class="card-link">Github</a>
+        </div>
+      </div>
+
+      <div class="card border-light portfolio-item">
+        <div class="card-header">
+          <div class="tab-dots row">
+            <div class="red-tab-dot"></div>
+            <div class="yellow-tab-dot"></div>
+            <div class="green-tab-dot"></div>
+          </div>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Qber</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Custom ML framework for Java</h6>
+            <p class="card-text">A machine learning library built in Java. Supports (very) primative neural networks. Built using Object-Oriented Programming principles. </p>
+            <a href="https://github.com/ricozhuthegreat/Qber" class="card-link">Github</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="resume" class="container">
+
+  </div>
+
+</body>
 
 </html>
