@@ -14,13 +14,17 @@
   <link type="text/css" rel="stylesheet" href="main/css/styles.css" />
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- AOS Animation Library CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- Custom JS -->
-  <script type="text/javascript" src="main/js/main.js"></script>
+  <script defer type="text/javascript" src="main/js/main.js"></script>
   <!-- Bootstrap + jQuery JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- AOS Animation Library JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 
@@ -29,7 +33,7 @@
   <!-- Bootstrap Navbar -->
   <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
 
-    <div class = "type-container">
+    <div class="type-container">
       <a class="navbar-brand type" href="#home">Rico Zhu</a>
     </div>
 
@@ -52,7 +56,9 @@
     <div class="type-container pull-left">
       <div id="home-title" class="page-title type"> Hello World! </div>
     </div>
-    <div id="home-subtitle" class="page-subtitle pull-left"> > My name is Rico Zhu, a 17 year old hackathon enthusiast </div>
+    <div data-aos="fade-up" data-aos-delay="750">
+      <div id="home-subtitle" class="page-subtitle pull-left"> > My name is Rico Zhu, a 17 year old hackathon enthusiast </div>
+    </div>
 
   </div>
 
@@ -141,6 +147,10 @@
       </div>
 
     </div>
+
+  </div>
+
+  <div id="resume" class="container">
 
   </div>
 
