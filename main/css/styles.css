@@ -20,6 +20,10 @@
   margin-top: 25vh;
 }
 
+#home-subtitle {
+  position: relative;
+}
+
 .page-title {
   font-size: 8vw;
   font-weight: 800;
