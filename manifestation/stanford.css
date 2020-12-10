@@ -1,0 +1,38 @@
+
+#stanford-main {
+    margin-top: 20vh;
+    font-weight: 600;
+    margin-left: 10vw;
+}
+
+#stanford-headline {
+    font-size: 3vw;
+    font-weight: 1000;
+    max-width: 80vw;
+}
+
+#stanford-emphasis {
+    font-size: 8vw;
+    font-weight: 1000;
+}
+
+#stanford-subtitle {
+    font-size: 2vw;
+    font-weight: 800;
+}
+
+#stanford-pledge {
+    margin-left: 2vw;
+    border: none;
+    padding-bottom: 1vh;
+    vertical-align: middle;
+    width: 50vw;
+}
+
+input[type='checkbox'] {
+    vertical-align: middle;
+    width: 8vh;
+    height: 8vh;
+    border-radius:5px;
+    border:2px solid #555;
+}
