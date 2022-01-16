@@ -18,10 +18,13 @@
 
 #home-title {
   margin-top: 25vh;
+  max-width: 90vw;
+  overflow-wrap: break-word;
 }
 
 #home-subtitle {
   position: relative;
+  overflow-wrap: break-word;
 }
 
 .page-title {
@@ -34,6 +37,20 @@
   font-size: 2.5vw;
   font-weight: 400;
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+}
+
+@media (max-aspect-ratio: 1/1) {
+
+  .page-title {
+    font-size: 12vh;
+    overflow-wrap: break-word;
+  }
+  
+  .page-subtitle {
+    font-size: 3vh;
+    overflow-wrap: break-word;
+  }
+
 }
 
 #about {
@@ -121,22 +138,7 @@ html {
 
 .type {
   overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
-  border-right: .1em solid orange;
-  /* The typwriter cursor */
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  margin: 0 auto;
-  /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .1em;
-  /* Adjust as needed */
-  animation:
-    typing 1.5s steps(18, end),
-    blink-caret .75s step-end infinite;
-}
-
-.type {
-  overflow: hidden;
+  overflow-wrap: break-word;
   /* Ensures the content is not revealed until the animation */
   border-right: .1em solid orange;
   /* The typwriter cursor */
@@ -153,6 +155,7 @@ html {
 
 .type-container {
   display: inline-flex;
+  overflow-wrap: break-word;
 }
 
 /* The typing effect */
